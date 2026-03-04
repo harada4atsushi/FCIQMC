@@ -4,4 +4,33 @@ In this repository, a Python implementation of the Full Configuration Interactio
 
 ## Usage
 
-## Result
+```
+$ pip install pyscf matplotlib tqdm
+``` 
+
+Perform a FCIQMC simulation.
+
+```
+$ python main.py
+```
+
+![Plot of the projected energy](figures/main_1.png)
+![Plot of the shift value](figures/main_2.png)
+![Plot of the walker population](figures/main_3.png)
+
+Perform a extrapolation of the energy with respect to the number of steps.
+
+```
+$ python extrapolation_steps_vs_energy.py
+```
+
+![Plot of the extrapolation of the energy with respect to the number of steps](figures/extrapolation_steps_vs_energy.png)
+
+
+Perform a extrapolation of the energy with respect to the number of determinants.
+
+```
+$ python extrapolation_det_vs_energy.py
+```
+
+![Plot of the extrapolation of the energy with respect to the number of determinants](figures/extrapolation_det_vs_energy.png)
